@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-rolls/static/css/main.acb002f7.css",
+    "main.js": "/react-rolls/static/js/main.6ae75bf4.js",
+    "index.html": "/react-rolls/index.html",
+    "main.acb002f7.css.map": "/react-rolls/static/css/main.acb002f7.css.map",
+    "main.6ae75bf4.js.map": "/react-rolls/static/js/main.6ae75bf4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acb002f7.css",
+    "static/js/main.6ae75bf4.js"
+  ]
+}
