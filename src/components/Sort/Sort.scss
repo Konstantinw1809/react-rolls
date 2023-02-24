@@ -1,0 +1,58 @@
+.app__sort {
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+.app__sort-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  b {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #eb5a1e;
+    height: 17px;
+  }
+  p:hover {
+    border-bottom: 1px dashed #eb5a1e;
+  }
+}
+
+.app__sort-dropdown img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.app__sort-popup {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.app__sort-popup_list {
+  width: 275px;
+}
+
+.app__sort-popup_list-element {
+  height: 40px;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.app__sort-popup_list-element:hover {
+  background-color: #e68054;
+  color: #fff;
+}
+
+.app__sort-popup_list-element.active {
+  background-color: #eb5a1e;
+  color: #fff;
+}

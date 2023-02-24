@@ -1,0 +1,22 @@
+.app__header {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.app__header-content {
+}
+.app__header-content-logo {
+  display: flex;
+  justify-content: center;
+}
+.app__header-content_heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.app__header-content_text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+}

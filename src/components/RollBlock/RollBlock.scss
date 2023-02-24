@@ -1,0 +1,71 @@
+.rollBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.rollBlock-img {
+  width: 265px;
+  height: 265px;
+}
+.rollBlock-body {
+  width: 100%;
+  padding: 20px;
+}
+
+.rollBlock-body_title {
+  color: #212529;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 25px;
+  margin-bottom: 40px;
+}
+.rollBlock-body_quantity {
+  font-size: 1rem;
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 16px;
+}
+.rollBlock-body_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rollBlock-body_block-price {
+}
+.rollBlock-body_block-price__weight {
+  color: #6c757d;
+}
+.rollBlock-body_block-price__currency {
+  font-size: 24px;
+}
+.rollBlock-body_btn {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  color: #eb5a1e;
+  border: 1px solid #eb5a1e;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.rollBlock-body_btn:hover {
+  background-color: #eb5a1e;
+  color: #fff;
+}
+
+.rollBlock-body_btn:active {
+  background-color: gold;
+  color: #fff;
+  border-color: rgb(240, 220, 95);
+}

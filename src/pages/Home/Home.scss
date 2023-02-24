@@ -1,0 +1,17 @@
+.app__home {
+}
+
+.app__home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.app__home-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}

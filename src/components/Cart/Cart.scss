@@ -1,0 +1,119 @@
+.app__cart {
+  position: sticky;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 350px;
+  min-width: 350px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  height: fit-content;
+}
+
+.app__cart-body {
+}
+
+.app__cart-body_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.app__cart-body_block-title {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.app__cart-body_block-clear {
+  padding: 10px 10px;
+  background-color: #eb5a1e;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
+}
+
+.app__cart-body_block-clear:hover {
+  background-color: #e9723e;
+}
+
+.app__cart-body_cart-wrapper {
+}
+
+.app__cart-body_cart-wrapper-empty {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #383d41;
+  background-color: #e2e3e5;
+  border: 1px solid #d6d8db;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-bottom: 1rem;
+}
+
+.app__cart-total {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
+
+  p {
+    margin-bottom: 0.5rem;
+
+    span {
+      font-weight: 500;
+      line-height: 1.2;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+}
+.delivery-cost {
+  color: #0ea107;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.app__cart-total_price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #eb5a1e;
+  margin-left: 10px;
+}
+.app__cart-form {
+}
+.app__cart-form_title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.app__cart-form_group {
+  margin-bottom: 15px;
+}
+.form-control {
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.app__cart-form_btn {
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #fff;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.app__cart-form_btn:hover {
+  background-color: #208cff;
+}
+
+.app__cart-form_btn:active {
+  border-color: #a5cdfa;
+}

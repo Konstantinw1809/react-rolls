@@ -1,0 +1,84 @@
+.app__fullRoll {
+}
+
+.app__fullRoll-content {
+  display: flex;
+}
+
+.app__fullRoll-content_image {
+  margin-right: 40px;
+}
+
+.app__fullRoll-content_block {
+  flex: 1 1 auto;
+  margin-right: 20px;
+}
+
+.app__fullRoll-content_block-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.app__fullRoll-content_block-parameters {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.app__fullRoll-content_block-ingredients {
+  margin-bottom: 20px;
+}
+
+.app__fullRoll-content_block-price {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.app__fullRoll-content_block-btn {
+  display: flex;
+  margin-top: 20px;
+}
+
+.app__fullRoll-content_block-btn_add {
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: transparent;
+  color: #eb5a1e;
+  border: 1px solid #eb5a1e;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.app__fullRoll-content_block-btn_add:hover {
+  background-color: #eb5a1e;
+  color: #fff;
+}
+
+.app__fullRoll-content_block-btn_add:active {
+  background-color: gold;
+  color: #fff;
+  border-color: rgb(240, 220, 95);
+}
+
+.app__fullRoll-content_block-btn_wrapper {
+  margin-left: auto;
+}
+
+.app__fullRoll-content_block-btn_wrapper-return {
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #eb5a1e;
+  color: #fff;
+  line-height: 1.5;
+  border-radius: 20px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.app__fullRoll-content_block-btn_wrapper-return:hover {
+  background-color: #c4450f;
+}

@@ -1,0 +1,27 @@
+.rollBlock-body_block-items {
+  display: flex;
+  background: #f2ede7;
+  border-radius: 8px;
+  width: 120px;
+  height: 38px;
+}
+.rollBlock-body_block-items_minus,
+.rollBlock-body_block-items_current,
+.rollBlock-body_block-items_plus {
+  width: 40px;
+  transition: 0.2s ease-in;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.rollBlock-body_block-items_plus,
+.rollBlock-body_block-items_minus {
+  cursor: pointer;
+}
+
+.rollBlock-body_block-items_plus:hover,
+.rollBlock-body_block-items_minus:hover {
+  background-color: #eb5a1e;
+}
