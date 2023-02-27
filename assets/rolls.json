@@ -1,0 +1,74 @@
+[
+  {
+    "id": "0",
+    "img": "/assets/img/california-hit.jpg",
+    "title": "Калифорния хит",
+    "price": 150,
+    "weight": 190,
+    "ingredients": "Авокадо, масаго, снежный краб, майонез",
+    "quantity": 6
+  },
+  {
+    "id": "1",
+    "img": "/assets/img/california-tempura.jpg",
+    "title": "Калифорния темпура",
+    "price": 125,
+    "weight": 205,
+    "ingredients": "Рис, икра Масаго, краб снежный, огурцы авокадо, сухари Панко",
+    "quantity": 6
+  },
+  {
+    "id": "2",
+    "img": "/assets/img/cheese-hot.jpg",
+    "title": "Сырный Gril",
+    "price": 119,
+    "weight": 185,
+    "ingredients": "Рис, сливочный сыр, пармезан, запеченый сыр чеддер",
+    "quantity": 8
+  },
+  {
+    "id": "3",
+    "img": "/assets/img/fudzi.jpg",
+    "title": "Ролл Фудзи",
+    "price": 160,
+    "weight": 200,
+    "ingredients": "Рис, икра масаго, кунжут, сливочный сир, лосось х/к, имбирь маринованый",
+    "quantity": 8
+  },
+  {
+    "id": "4",
+    "img": "/assets/img/furatsu-tora.jpg",
+    "title": "Фурацу Tora",
+    "price": 229,
+    "weight": 240,
+    "ingredients": "Рис, тигровая креветка, авокадо, лосось, огурец, сливочный сыр, унаги соус, кунжут",
+    "quantity": 8
+  },
+  {
+    "id": "5",
+    "img": "/assets/img/philadelphia-kunsei.jpg",
+    "title": "Филадельфия Kunsei",
+    "price": 205,
+    "weight": 220,
+    "ingredients": "Рис, лосось х/к, сливочный сыр, авокадо",
+    "quantity": 8
+  },
+  {
+    "id": "6",
+    "img": "/assets/img/philadelphia.jpg",
+    "title": "Филадельфия хит ролл",
+    "price": 150,
+    "weight": 180,
+    "ingredients": "Рис, нори, сливочный сыр, огурец, лосось",
+    "quantity": 6
+  },
+  {
+    "id": "7",
+    "img": "/assets/img/zapech-california.jpg",
+    "title": "Запеченный ролл Калифорния",
+    "price": 115,
+    "weight": 180,
+    "ingredients": "рис, нори, снежный краб, авокадо, огурец, майонез,тобико,сыр",
+    "quantity": 8
+  }
+]
