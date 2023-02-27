@@ -13,7 +13,7 @@ import "./FullRoll.scss";
 
 const FullRoll = () => {
   const { id } = useParams();
-  const [roll, setRoll] = React.useState({});
+  const [roll, setRoll] = React.useState();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -53,7 +53,7 @@ const FullRoll = () => {
   };
 
   if (!roll) {
-    return <>"Загрузка..."</>;
+    return <div className="container">Загрузка...</div>;
   }
 
   return (

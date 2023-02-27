@@ -1,7 +1,8 @@
 import React from "react";
 import CartItem from "../CartItem/CartItem";
 import { useDispatch, useSelector } from "react-redux";
-import { clearItems } from "../../redux/slices/cartSlice";
+import { clearItems, fetchCart } from "../../redux/slices/cartSlice";
+// import axios from "axios";
 
 import "./Cart.scss";
 
@@ -12,6 +13,23 @@ const Cart = () => {
   const onClickClear = () => {
     dispatch(clearItems());
   };
+
+  // const onClickAddToOrders = async () => {
+  //   try {
+  //     await axios.post("",
+  //       items
+  //     );
+  //     onClickClear();
+  //   } catch (error) {
+  //     alert("Ошибка при добавлении заказа");
+  //   }
+  // };
+
+  // React.useEffect(() => {
+  //   (async () => {
+  //     dispatch(fetchCart());
+  //   })();
+  // }, []);
 
   const emptyCart = (
     <div className="app__cart-body_cart-wrapper-empty">Корзина пуста</div>
@@ -55,7 +73,11 @@ const Cart = () => {
               placeholder="Ваш номер телефона"
             />
           </div>
-          <button type="submit" className="app__cart-form_btn">
+          <button
+            // onClick={onClickAddToOrders}
+            type="submit"
+            className="app__cart-form_btn"
+          >
             Заказать
           </button>
         </form>

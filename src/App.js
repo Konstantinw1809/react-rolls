@@ -13,9 +13,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route path="/roll/:id" element={<FullRoll />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Route>
+        <Route path="/roll/:id" element={<FullRoll />}></Route>
       </Routes>
     </div>
   );

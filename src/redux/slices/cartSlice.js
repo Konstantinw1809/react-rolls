@@ -1,8 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+// import axios from "axios";
+
+// export const fetchCart = createAsyncThunk("cart/fetchCartStatus", async () => {
+//   const response = await axios.get(
+//     `https://63ed0de2e6ee53bbf590356d.mockapi.io/cart`
+//   );
+//   return response.data;
+// });
 
 const initialState = {
   totalPrice: 0,
   items: [],
+  // status: "loading",
 };
 
 const cartSlice = createSlice({
@@ -17,7 +26,7 @@ const cartSlice = createSlice({
         if (findItem) {
           findItem.count = action.payload.count;
         } else {
-          state.items.push({ ...action.payload, count: action.payload.count });
+          state.items.push({ ...action.payload });
         }
         state.totalPrice = state.items.reduce(
           (sum, obj) => (sum += obj.price * obj.count),
@@ -49,6 +58,20 @@ const cartSlice = createSlice({
       }
     },
   },
+  // extraReducers: {
+  //   [fetchCart.pending]: (state) => {
+  //     state.status = "loading";
+  //     state.items = [];
+  //   },
+  //   [fetchCart.fulfilled]: (state, action) => {
+  //     state.items = action.payload;
+  //     state.status = "success";
+  //   },
+  //   [fetchCart.rejected]: (state) => {
+  //     state.status = "error";
+  //     state.items = [];
+  //   },
+  // },
 });
 
 export const { addItem, removeItem, clearItems, plusItem, minusItem } =
