@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-rolls/static/css/main.543116cd.css",
-    "main.js": "/react-rolls/static/js/main.6ab6313e.js",
+    "main.css": "/react-rolls/static/css/main.b443fd77.css",
+    "main.js": "/react-rolls/static/js/main.6293fb9f.js",
     "index.html": "/react-rolls/index.html",
-    "main.543116cd.css.map": "/react-rolls/static/css/main.543116cd.css.map",
-    "main.6ab6313e.js.map": "/react-rolls/static/js/main.6ab6313e.js.map"
+    "main.b443fd77.css.map": "/react-rolls/static/css/main.b443fd77.css.map",
+    "main.6293fb9f.js.map": "/react-rolls/static/js/main.6293fb9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.543116cd.css",
-    "static/js/main.6ab6313e.js"
+    "static/css/main.b443fd77.css",
+    "static/js/main.6293fb9f.js"
   ]
 }
