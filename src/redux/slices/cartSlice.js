@@ -1,17 +1,11 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-// import axios from "axios";
+import { createSlice } from "@reduxjs/toolkit";
+import { getCartFromLS } from "../../utils/getCartFromLS";
 
-// export const fetchCart = createAsyncThunk("cart/fetchCartStatus", async () => {
-//   const response = await axios.get(
-//     `https://63ed0de2e6ee53bbf590356d.mockapi.io/cart`
-//   );
-//   return response.data;
-// });
+const { items, totalPrice } = getCartFromLS();
 
 const initialState = {
-  totalPrice: 0,
-  items: [],
-  // status: "loading",
+  totalPrice,
+  items,
 };
 
 const cartSlice = createSlice({
@@ -58,20 +52,6 @@ const cartSlice = createSlice({
       }
     },
   },
-  // extraReducers: {
-  //   [fetchCart.pending]: (state) => {
-  //     state.status = "loading";
-  //     state.items = [];
-  //   },
-  //   [fetchCart.fulfilled]: (state, action) => {
-  //     state.items = action.payload;
-  //     state.status = "success";
-  //   },
-  //   [fetchCart.rejected]: (state) => {
-  //     state.status = "error";
-  //     state.items = [];
-  //   },
-  // },
 });
 
 export const { addItem, removeItem, clearItems, plusItem, minusItem } =

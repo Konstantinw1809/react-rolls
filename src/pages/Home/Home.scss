@@ -1,11 +1,12 @@
 .app__home {
+  display: grid;
+  align-content: center;
 }
 
 .app__home-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
-  align-content: center;
   margin-bottom: 20px;
 }
 
@@ -14,4 +15,20 @@
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .app__home-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app__home-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app__home-row {
+    order: 1;
+  }
 }

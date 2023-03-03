@@ -10,7 +10,7 @@
   justify-content: center;
 }
 .app__header-content_heading {
-  font-size: 3.5rem;
+  font-size: 45px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -19,4 +19,20 @@
   font-weight: 300;
   text-align: center;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+  .app__header-content_heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__header {
+    padding: 25px 0;
+  }
+
+  .app__header-content_heading {
+    font-size: 24px;
+  }
 }

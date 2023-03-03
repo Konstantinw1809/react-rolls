@@ -1,35 +1,26 @@
 import React from "react";
 import CartItem from "../CartItem/CartItem";
 import { useDispatch, useSelector } from "react-redux";
-import { clearItems, fetchCart } from "../../redux/slices/cartSlice";
-// import axios from "axios";
+import { clearItems } from "../../redux/slices/cartSlice";
 
 import "./Cart.scss";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const { totalPrice, items } = useSelector((state) => state.cart);
+  const isMounted = React.useRef(false);
+
+  React.useEffect(() => {
+    if (isMounted) {
+      const json = JSON.stringify(items);
+      localStorage.setItem("cart", json);
+    }
+    isMounted.current = true;
+  }, [items]);
 
   const onClickClear = () => {
     dispatch(clearItems());
   };
-
-  // const onClickAddToOrders = async () => {
-  //   try {
-  //     await axios.post("",
-  //       items
-  //     );
-  //     onClickClear();
-  //   } catch (error) {
-  //     alert("Ошибка при добавлении заказа");
-  //   }
-  // };
-
-  // React.useEffect(() => {
-  //   (async () => {
-  //     dispatch(fetchCart());
-  //   })();
-  // }, []);
 
   const emptyCart = (
     <div className="app__cart-body_cart-wrapper-empty">Корзина пуста</div>
